@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C6FFBC">
+
+    <TextView
+        android:id="@+id/titleBelge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci Belge Fragment"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBelge"
+        android:layout_marginTop="33dp"
+        android:text="Learning Aggrement, Recognition Sheet, Transkript Ekleme Arayüzü"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextPdf"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="80dp"
+        android:hint="Upload Edilecek PDF'i Giriniz"
+        android:textColor="#0000EF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPDFUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="370dp"
+        android:layout_toEndOf="@+id/btnGeriDonBelge"
+        android:text="Yükle"
+        android:textColor="#CA0000"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="167dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/textViewPDFName"
+        android:layout_alignBottom="@+id/editTextPdf"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="-497dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Transkript" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Recognition_Sheet" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Learning_Aggrement" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewPDFName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="495dp"
+        android:hint="Lütfen Dosya İsminin Türünü Baş Harfi Büyük Olacak Şekilde Yazarak Yükleyiniz"
+        android:textColor="#CA0000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGeriDonBelge"
+        android:layout_below="@+id/editTextPdf"
+        android:layout_centerHorizontal="true"
+        android:text="Geri Dön"/>
+
+    <TextView
+        android:id="@+id/twTranskript"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGeriDonBelge"
+        android:hint="Transkript"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twTranskript1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGeriDonBelge"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/twTranskript"
+        android:text="Transkript"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twTranskript"
+        android:layout_marginTop="0dp"
+        android:hint="Learning_Aggrement"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twLA1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twTranskript1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/twLA"
+        android:text="Learning Aggrement"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twRS"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twLA"
+        android:hint="Recognition_Sheet"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twRS1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twLA1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/twRS"
+        android:text="RecognitionSheet"
+        android:textColor="#CA0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/twOgrenciBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci No"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/twNumberOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci No"
+        android:textSize="13sp" />
+
+
+
+</RelativeLayout>

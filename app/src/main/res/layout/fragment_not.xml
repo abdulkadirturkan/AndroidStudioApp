@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#CEFFC6">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Öğrenci Notları"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/twOgrenciBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bilgi"
+        android:textSize="26sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="8"
+            android:hint="DersID"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="8"
+            android:hint="Not Girişi"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notu Güncelle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtMesajlar"
+            android:layout_width="255dp"
+            android:layout_height="250dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarKod"
+            android:layout_width="45dp"
+            android:layout_height="250dp"
+            android:background="#CEFFD4"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarNot"
+            android:layout_width="20dp"
+            android:layout_height="250dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarHarf"
+            android:layout_width="30dp"
+            android:layout_height="250dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal|vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AKTS Erasmus"
+        android:textSize="23sp"
+        android:layout_weight="1"
+        android:ems="5"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/display_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam AKTS"
+        android:textSize="23sp"
+        android:layout_weight="1"
+        android:ems="5"
+        android:layout_centerInParent="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AKTS KBU"
+            android:textSize="23sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/display_messageKBU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KBU AKTS"
+            android:textSize="23sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnKBUDers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Karabük Derslerini Görüntüle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtMesajlarKbu"
+            android:layout_width="255dp"
+            android:layout_height="210dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarKbuKod"
+            android:layout_width="45dp"
+            android:layout_height="210dp"
+            android:background="#CEFFD4"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarKbuNot"
+            android:layout_width="20dp"
+            android:layout_height="210dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/txtMesajlarKbuHarf"
+            android:layout_width="30dp"
+            android:layout_height="210dp"
+            android:background="#CEFFD4"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal|vertical" />
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

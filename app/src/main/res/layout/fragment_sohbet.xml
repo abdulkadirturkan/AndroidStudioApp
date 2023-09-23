@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#45B8C6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sohbet Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Kime" />
+
+            <TextView
+                android:id="@+id/twOgrenciBilgi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ogrenci No"
+                android:textSize="23sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:text="Mesaj" />
+
+            <EditText
+                android:id="@+id/txtMesaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGonder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:baselineAligned="false"
+            android:text="Gönder" />
+        <TextView
+            android:id="@+id/txtReceived3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#5DB2C1"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/txtSend3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#47B4C3"
+            android:gravity="right"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/txtReceived2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#5DB2C1"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/txtSend2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#47B4C3"
+            android:gravity="right"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/txtReceived1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#5DB2C1"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/txtSend1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#47B4C3"
+            android:gravity="right"
+            android:scrollbars="horizontal|vertical" />
+        <TextView
+            android:id="@+id/twKoordinatorBilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koordinator"
+            android:textSize="1sp" />
+
+    </LinearLayout>
+</LinearLayout>

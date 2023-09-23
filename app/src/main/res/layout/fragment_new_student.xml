@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C6FFBC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gelecek Donem Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numara Ad Soyad Departman"
+        android:textSize="27sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtMesajlar"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="horizontal|vertical"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnListe"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Listele" />
+</LinearLayout>

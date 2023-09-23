@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_duyuru"
+            android:icon="@drawable/ic_duyuru"
+            android:title="Duyuru" />
+        <item
+            android:id="@+id/nav_belge_coord"
+            android:icon="@drawable/ic_ders_stu"
+            android:title="Belge Ekleme/Duzenleme" />
+        <item
+            android:id="@+id/nav_mufredat"
+            android:icon="@drawable/ic_rapor_stu"
+            android:title="Mufredat Girisi/Duzenleme" />
+        <item
+            android:id="@+id/nav_coordinator"
+            android:icon="@drawable/ic_coordinator"
+            android:title="Koordinatör Ekleme/Duzenleme" />
+        <item
+            android:id="@+id/nav_ircoord_ogrenci"
+            android:icon="@drawable/ic_coordinator"
+            android:title="Ögrenci Ekleme/Düzenleme" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Çıkış" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/twbaykus"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher_baykus"
+        app:layout_constraintBottom_toTopOf="@+id/btnStu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStu"
+        android:layout_width="144dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#20000000"
+        android:onClick="nextActivity"
+        android:text="Öğrenci Giriş"
+        app:layout_constraintBottom_toTopOf="@+id/btnCoord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCoord"
+        android:layout_width="144dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="380dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#20000000"
+        android:onClick="nextActivity2"
+        android:text="Koordinatör Giriş"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStu" />
+
+    <Button
+        android:id="@+id/btnIRCoord"
+        android:layout_width="144dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="320dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#20000000"
+        android:onClick="nextActivity3"
+        android:text="IR Koordinatör Giriş"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCoord"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoord"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CEFFC6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/twpicture"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_profile">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtMesajlar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:text="Ad"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/twsurname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Soyad"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/twmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Mail"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/twnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Numara"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/twdept"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Departman"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/btnGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Güncelle" />
+
+</LinearLayout>

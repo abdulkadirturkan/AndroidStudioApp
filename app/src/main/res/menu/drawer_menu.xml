@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_university"
+            android:icon="@drawable/ic_baseline_corporate_fare_24"
+            android:title="Universite" />
+        <item
+            android:id="@+id/nav_ders"
+            android:icon="@drawable/ic_ders_stu"
+            android:title="Ders" />
+        <item
+            android:id="@+id/nav_duyuru"
+            android:icon="@drawable/ic_duyuru"
+            android:title="Duyuru" />
+        <item
+            android:id="@+id/nav_belge"
+            android:icon="@drawable/ic_belge_stu"
+            android:title="Belgeler" />
+        <item
+            android:id="@+id/nav_sohbet"
+            android:icon="@drawable/ic_sohbet_stu"
+            android:title="Sohbet" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Çıkış" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+        </menu>
+    </item>
+</menu>

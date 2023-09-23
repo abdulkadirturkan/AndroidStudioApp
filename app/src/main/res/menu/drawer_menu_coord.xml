@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_duyuru"
+            android:icon="@drawable/ic_duyuru"
+            android:title="Duyuru" />
+        <item
+            android:id="@+id/nav_ogrenciler"
+            android:icon="@drawable/ic_profile"
+            android:title="Ogrenciler" />
+
+        <item
+            android:id="@+id/nav_university_coord"
+            android:icon="@drawable/ic_not_stu"
+            android:title="Universite Ekleme/Duzenleme" />
+        <item
+            android:id="@+id/nav_mufredat"
+            android:icon="@drawable/ic_rapor_stu"
+            android:title="Mufredat Girisi/Duzenleme" />
+        <item
+            android:id="@+id/nav_ogrenci_belge"
+            android:icon="@drawable/ic_rapor_stu"
+            android:title="Belge Dokum" />
+        <item
+            android:id="@+id/nav_statictic"
+            android:icon="@drawable/ic_statistic"
+            android:title="Istatistik" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Çıkış" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+</menu>

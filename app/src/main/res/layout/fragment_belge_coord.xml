@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C6FFBC">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belge Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnYukle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Belge Yükle" />
+
+        <Button
+            android:id="@+id/btnIndir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Belge indir" />
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOgrenciNo"
+        android:hint="Yuklemek İstediğiniz Belgeyi Seçiniz.."/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Transkript" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Recognition_Sheet" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Learning_Aggrement" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtMesajlar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:scrollbars="horizontal|vertical" />
+    <TextView
+        android:id="@+id/twOgrenciBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci No"
+        android:textSize="13sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transkript"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="6"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/twTranskript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Transkript"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="4"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learning Aggrement"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="6"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/twLA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learning Aggrement"
+            android:gravity="right"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="4"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recognition Sheet"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="6"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/twRS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recognition Sheet"
+            android:gravity="right"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:ems="4"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGeriDonBelge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Geri Dön" />
+
+</LinearLayout>

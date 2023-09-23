@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C6FFBC">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci Otomasyon"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/twOgrenciBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci No"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDersEslenik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ders Eşleniği" />
+
+        <Button
+            android:id="@+id/btnNotYonlendirme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Not Girişi" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBelge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Belge Görüntüleme" />
+
+        <Button
+            android:id="@+id/btnMesaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mesaj" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMesajlar"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+
+        android:scrollbars="horizontal|vertical"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnBos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geri Dön" />
+</LinearLayout>

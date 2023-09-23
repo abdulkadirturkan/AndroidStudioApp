@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "361856070851",
+    "project_id": "erasmusproject-dfd34",
+    "storage_bucket": "erasmusproject-dfd34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361856070851:android:b2f0b28eb28c85cb0dde76",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361856070851-f1e9band0hmq2je59n1qm6tp5ijbchcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8DkjLRcsCazO3L5UQjK_1czX0Ab1Tcqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361856070851-f1e9band0hmq2je59n1qm6tp5ijbchcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

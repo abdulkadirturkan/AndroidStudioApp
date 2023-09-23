@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#A54CBD">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ogrenci Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/oldStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gecmis Donem Ogrenci" />
+    <Button
+        android:id="@+id/activeSemStu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktif Donem Ogrenci"
+        android:onClick="activeStu"/>
+    <Button
+        android:id="@+id/newSemStu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gelecek Donem Ogrenci"
+        android:onClick="nextStu"/>
+</LinearLayout>

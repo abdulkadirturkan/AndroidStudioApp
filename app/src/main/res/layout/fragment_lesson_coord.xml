@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C6FFBC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ders Eşleniği Fragment"
+        android:textSize="29sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/twOgrenciBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bilgi"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Öğrencinin Erasmus Eşlenik Dersleri"
+        android:textSize="21sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Sömestır"
+            android:textSize="20sp" />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#14000000"
+            android:layout_weight="0"
+            android:text="Seç" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtMesajlar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:textSize="12sp"
+        android:scrollbars="horizontal|vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDersAl"
+                android:hint="Ders ID" />
+             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seç"
+                android:id="@+id/btnSec"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtMesajlarEslenik"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:textSize="12sp"
+                android:scrollbars="horizontal|vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AKTS Erasmus"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/display_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam AKTS"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AKTS KBU"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/display_messageKBU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KBU AKTS"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ders Ekle-Sil-Güncelle"
+        android:textSize="22sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtDersID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="9"
+            android:hint="Erasmus Ders ID"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ekle" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sil" />
+
+        <Button
+            android:id="@+id/btnGuncelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Güncelle" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/twSemesterBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="5sp"/>
+    <TextView
+        android:id="@+id/twNumberOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="5sp"/>
+    <TextView
+        android:id="@+id/twLessonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="5sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karabük Dersleri"
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/txtMesajlarKBU"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:textSize="12sp"
+            android:scrollbars="horizontal|vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erasmus Dersleri"
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/txtMesajlarErasmus"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:textSize="12sp"
+            android:scrollbars="horizontal|vertical" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
